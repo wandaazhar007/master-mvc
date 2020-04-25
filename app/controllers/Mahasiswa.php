@@ -1,5 +1,5 @@
 <?php 
-    class Mahasiswa extends AZAPPController {
+    class Mahasiswa extends WAZAPPController {
 
         public function index() {
             $data['title']          = 'Mahasiswa';

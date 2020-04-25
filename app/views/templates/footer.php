@@ -1,7 +1,7 @@
 </div>
-    <script src="http://localhost/master-mvc/public/js/jquery-3.4.1.slim.min.js"></script>
-    <script src="http://localhost/master-mvc/public/js/popper.min.js"></script>
-    <script src="http://localhost/master-mvc/public/js/bootstrap.js"></script>
-    <script src="http://localhost/master-mvc/public/js/Azappscript.js"></script>
+    <script src="<?= WAZAPP_BASEURL ?>/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="<?= WAZAPP_BASEURLL ?>/js/popper.min.js"></script>
+    <script src="<?= WAZAPP_BASEURL ?>/js/bootstrap.js"></script>
+    <script src="<?= WAZAPP_BASEURL ?>/js/wazappScript.js"></script>
     </body>
 </html>

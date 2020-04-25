@@ -7,7 +7,7 @@
  * Instagram: @wanda_azharr
  */
 
-    class Flasher {
+    class WAZAPPFlasher {
         public static function setFlash($pesan, $aksi, $tipe) {
             $_SESSION['flash'] = [
                 'pesan' => $pesan,

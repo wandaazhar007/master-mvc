@@ -25,14 +25,14 @@
 				<?php foreach ($data['mahasiswa'] as $i): ?>
 					<tr>
 						<td><?php  ?></td>
-						<td><?php echo $i['nama'] ?></td>
-						<td><?php echo $i['nrp'] ?></td>
-						<td><?php echo $i['email'] ?></td>
-						<td><?php echo $i['jurusan'] ?></td>
+						<td><?= $i['nama'] ?></td>
+						<td><?= $i['nrp'] ?></td>
+						<td><?= $i['email'] ?></td>
+						<td><?= $i['jurusan'] ?></td>
 						<td>
-                        <a href="http://localhost/master-mvc/public/mahasiswa/detail/<?php echo $i['id']?>" class="badge badge-info">Detail</a>
-                        <a href="http://localhost/master-mvc/public/mahasiswa/update/<?php echo $i['id']?>" class="badge badge-info tampilModalUbah" data-toggle="modal" data-target="#mahasiswaModal">Edit</a>
-                        <a href="http://localhost/master-mvc/public/mahasiswa/delete/<?php echo $i['id']?>" class="badge badge-danger" onclick="return confirm('Apakah yakin ingin menghapus data ini ?')">Delete</a>
+                        <a href="<?= WAZAPP_BASEURL ?>/mahasiswa/detail/<?= $i['id']?>" class="badge badge-info">Detail</a>
+                        <a href="<?= WAZAPP_BASEURL ?>/mahasiswa/update/<?= $i['id']?>" class="badge badge-info tampilModalUbah" data-toggle="modal" data-target="#mahasiswaModal">Edit</a>
+                        <a href="<?= WAZAPP_BASEURL ?>/mahasiswa/delete/<?= $i['id']?>" class="badge badge-danger" onclick="return confirm('Apakah yakin ingin menghapus data ini ?')">Delete</a>
                         </td>
 					</tr>
 				<?php endforeach; ?>
@@ -53,7 +53,7 @@
 			</button>
 		</div>
 		<div class="modal-body">
-		<form action="http://localhost/master-mvc/public/mahasiswa/insert" method="post">
+		<form action="<?= WAZAPP_BASEURL ?>/mahasiswa/insert" method="post">
 			<div class="form-group row" style="width: 700px;">
 				<label for="nama" class="col-sm-3 col-form-label">Nama Mahasiswa</label>
 				<div class="col-sm-4">

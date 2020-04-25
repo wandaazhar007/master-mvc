@@ -7,7 +7,7 @@
  * Instagram: @wanda_azharr
  */
 
-    class AZAPPController {
+    class WAZAPPController {
         
         public function view($view, $data = []) {
             require_once '../app/views/' . $view . '.php';
