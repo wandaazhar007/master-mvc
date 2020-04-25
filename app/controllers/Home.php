@@ -1,5 +1,5 @@
 <?php 
-    class Home extends AZAPPController {
+    class Home extends WAZAPPController {
 
         public function index() {
             $data['title']      = 'Halaman Home';

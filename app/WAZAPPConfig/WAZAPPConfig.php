@@ -7,7 +7,7 @@
  * Instagram: @wanda_azharr
  */
 
-    define('WAZAPP_BASEURL', 'http://127.0.0.1/master-mvc/public');
+define('WAZAPP_BASEURL', 'http://127.0.0.1/master-mvc/public');
     
 
 //Config Database

@@ -21,11 +21,11 @@
 
         public function insert() {
             if($this->model('M_mahasiswa')->insertMahasiswa($_POST) > 0) {
-                Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+                WAZAPPFlasher::setFlash('berhasil', 'ditambahkan', 'success');
                 header('Location: http://localhost/master-mvc/public/mahasiswa');
                 exit;
             } 
-                Flasher::setFlash('gagal', 'ditambahkan', 'danger');
+                WAZAPPFlasher::setFlash('gagal', 'ditambahkan', 'danger');
                 header('Location: http://localhost/master-mvc/public/mahasiswa');
                 exit;
         }
@@ -34,11 +34,11 @@
 
             $query = $this->model('M_mahasiswa')->hapusMahasiswa($id);
             if($query > 0) {
-                Flasher::setFlash('berhasil', 'dihapus', 'success');
+                WAZAPPFlasher::setFlash('berhasil', 'dihapus', 'success');
                 header('Location: http://localhost/master-mvc/public/mahasiswa');
                 exit;
             } else {
-                Flasher::setFlash('gagal', 'dihapus', 'danger');
+                WAZAPPFlasher::setFlash('gagal', 'dihapus', 'danger');
                 header('Location: http://localhost/master-mvc/public/mahasiswa');
                 exit;
             }
@@ -53,5 +53,9 @@
             //     exit;
         }
 
+        public function update() {
+           $query = $this->model('M_mahasiswa')->getById($_POST['id']);
+            echo json_encode($query);
+        }
         
     }

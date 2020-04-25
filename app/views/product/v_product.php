@@ -6,7 +6,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-				<?php Flasher::flash() ; ?>
+				<?php WAZAPPFlasher::flash() ; ?>
 				</div>
 			</div>
 

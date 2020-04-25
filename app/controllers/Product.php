@@ -1,5 +1,5 @@
 <?php 
-class Product extends AZAPPController {
+class Product extends WAZAPPController {
 
     
     public function index(){
@@ -21,11 +21,11 @@ class Product extends AZAPPController {
     }
     public function insert() {
         if($this->model('M_product')->insertProduct($_POST) > 0) {
-            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
+            WAZAPPFlasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: http://localhost/master-mvc/public/product');
             exit;
         } else {
-            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            WAZAPPFlasher::setFlash('berhasil', 'ditambahkan', 'success');
             header('Location: http://localhost/master-mvc/public/product');
             exit;
         }
