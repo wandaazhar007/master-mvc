@@ -1,0 +1,15 @@
+.kotak-card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kotak-form-edit {
+    margin: 10px auto;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.kotak-form-edit form {
+    margin: 10px auto;
+}
