@@ -1,4 +1,12 @@
-<?php 
+<?php
+/**
+ * MyFramework
+ * @author	Wanda Azhar
+ * @copyright	24-04-2020
+ * Github: https://github.com/wandaazhar007/
+ * Instagram: @wanda_azharr
+ */
+
     class Database {
         private $host       = DB_HOST;
         private $user       = DB_USER;

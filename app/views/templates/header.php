@@ -25,6 +25,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Transaction</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/master-mvc/public/mahasiswa">Mahasiswa</a>
+            </li>
         </ul>
     </div>
     </nav>

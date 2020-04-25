@@ -20,16 +20,12 @@ class Product extends AZAPPController {
         $this->view('templates/footer');
     }
     public function insert() {
-        // ob_start();
         if($this->model('M_product')->insertProduct($_POST) > 0) {
-            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
-            // ob_start();
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: http://localhost/master-mvc/public/product');
-            // echo "<script type='text/javascript'>window.location.href = 'http://localhost/master-mvc/public/product';</script>";
-            // echo '<META HTTP-EQUIV="Refresh" Content="0; URL=http://localhost/master-mvc/public/product">';
             exit;
         } else {
-            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
             header('Location: http://localhost/master-mvc/public/product');
             exit;
         }
